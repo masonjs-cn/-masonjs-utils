@@ -2,7 +2,7 @@
   "name": "@masonjs/utils",
   "author": "Mason",
   "license": "ISC",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",
   "jsnext:main": "lib/index.esm.js",
