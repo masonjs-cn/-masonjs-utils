@@ -6,7 +6,7 @@ import { isBlob } from '../validator/isBlob'
  * @param {string} type
  * @return {*}
  */
-export const downFile = (value: Blob, filename: string, type: string) => {
+export const downFile = (value: Blob, filename: string, type: string): boolean => {
   if (!isBlob(value)) {
     console.error('值不是流!')
     return false
@@ -20,4 +20,5 @@ export const downFile = (value: Blob, filename: string, type: string) => {
   link.setAttribute('download', `${filename}.${type}`)
   link.click()
   link = null
+  return true
 }

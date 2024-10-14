@@ -1,8 +1,8 @@
 {
   "name": "@masonjs/utils",
   "author": "Mason",
-  "license": "ISC",
-  "version": "0.0.2",
+  "license": "MIT",
+  "version": "0.0.4",
   "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",
   "jsnext:main": "lib/index.esm.js",
@@ -11,17 +11,23 @@
   "files": [
     "lib"
   ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "keywords": [
     "@masonjs/utils",
     "utils"
   ],
+  "homepage": "https://github.com/masonjs-cn/ms-utils",
+  "bugs": "https://github.com/masonjs-cn/ms-utils/issues",
   "scripts": {
     "build": "rollup -c",
     "test": "jest",
     "coveralls": "jest --coverage",
     "lint": "eslint --ext .ts src/",
     "prettier": "prettier -c --write \"src/**/*\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "pub": "npm publish --access public"
   },
   "lint-staged": {
     "**/*.ts": [

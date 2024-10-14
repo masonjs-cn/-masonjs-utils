@@ -1,7 +1,5 @@
 import { isObject } from './isObject'
-interface IsEmptyObjectValue {
-  [key: string]: any
-}
+
 /**
  * @description: 验证空对象
  * @param {IsEmptyObjectValue} value

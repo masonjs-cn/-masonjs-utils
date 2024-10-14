@@ -31,5 +31,7 @@ module.exports = {
     "no-unused-vars": "off",
     "@typescript-eslint/indent": ["error", 2], // tab 缩进2空格
     '@typescript-eslint/no-explicit-any': 'off',
+    'no-console': 'off', // 关闭 no-console 规则
+    "@typescript-eslint/no-this-alias": "off"
   }
 }
